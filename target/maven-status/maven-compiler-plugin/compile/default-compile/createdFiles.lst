@@ -1,0 +1,4 @@
+com\codedecode\docker\DockerApplication.class
+com\codedecode\docker\entity\DemoEntity.class
+com\codedecode\docker\repo\DemoRepo.class
+com\codedecode\docker\controller\DockerDemoController.class
