@@ -5,10 +5,12 @@ services:
     image: muhammetaydin/dockerdemoapril:0.0.1
     ports:
       - 8080:8080
+    restart: on-failure
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/localspringbootdb?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
       SPRING_DATASOURCE_USERNAME: admin
       SPRING_DATASOURCE_PASSWORD: root
+      -SLEEP_LENGTH: 5
     depends_on:
       - db
   db:
