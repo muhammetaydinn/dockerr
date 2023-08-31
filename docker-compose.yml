@@ -15,7 +15,7 @@ services:
       db:
         condition: service_completed_successfully
   db:
-    image: muhammetaydin/mysql
+    image: mysql
     environment:
         DATABASE_HOST: docker-mysql
         DATABASE_PORT: 3306
